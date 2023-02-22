@@ -1,0 +1,39 @@
+﻿<Window x:Class="Logger.Views.DebugWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Logger.Views"
+             mc:Ignorable="d" Background="Transparent"
+             Height="400" Width="550" Topmost="True" ResizeMode="CanResizeWithGrip" Title="✌">
+    <Window.DataContext>
+        <local:DebugWindowViewModel />
+    </Window.DataContext>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="0" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="0" />
+        </Grid.RowDefinitions>
+        <ScrollViewer Grid.Column="1" Grid.Row="1" Background="Transparent" VerticalScrollBarVisibility="Visible">
+            <TextBox x:Name="TextBoxDebugInfo" Text="{Binding DebugInfo}" Background="Transparent" BorderBrush="OrangeRed"
+                     Foreground="LightYellow"
+                     HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextWrapping="Wrap" />
+        </ScrollViewer>
+        <Grid Grid.Row="2" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="2" x:Name="ButtonApply" BorderThickness="0"
+                    Background="LightGoldenrodYellow" Content="Принято, шеф ✌" 
+                    FontFamily="Comic Sans MS" Margin="0 0 0 0" FontSize="14"/>
+        </Grid>
+    </Grid>
+</Window>

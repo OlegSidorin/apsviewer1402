@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "apsviewer1402", "apsviewer1402\apsviewer1402.csproj", "{248E44F6-6EA4-4994-A98B-51430D29ED33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logger", "Logger\Logger.csproj", "{D57D0EC3-4214-4487-A3C0-1D583AB8C539}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{248E44F6-6EA4-4994-A98B-51430D29ED33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{248E44F6-6EA4-4994-A98B-51430D29ED33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{248E44F6-6EA4-4994-A98B-51430D29ED33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{248E44F6-6EA4-4994-A98B-51430D29ED33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D57D0EC3-4214-4487-A3C0-1D583AB8C539}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D57D0EC3-4214-4487-A3C0-1D583AB8C539}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D57D0EC3-4214-4487-A3C0-1D583AB8C539}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D57D0EC3-4214-4487-A3C0-1D583AB8C539}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {35B1DF0A-B2A8-4760-9ACE-AB11CCEDFB7F}
+	EndGlobalSection
+EndGlobal

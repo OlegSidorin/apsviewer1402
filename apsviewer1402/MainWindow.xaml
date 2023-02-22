@@ -1,0 +1,100 @@
+﻿<Window x:Class="apsviewer1402.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:apsviewer1402"
+        mc:Ignorable="d"
+        Title="test forge aps" Height="550" Width="900" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1" />
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Border Background="#555555">
+           
+        </Border>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="5*"/>
+            </Grid.ColumnDefinitions>
+            <Border Background="#44442244">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="36"/>
+                        <RowDefinition Height="36"/>
+                        <RowDefinition Height="36"/>
+                        <RowDefinition Height="36"/>
+                        <RowDefinition Height="36"/>
+                        <RowDefinition Height="36"/>
+                        <RowDefinition Height="36"/>
+                        <RowDefinition Height="36"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="Задачи" FontSize="16" FontWeight="DemiBold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <Button Grid.Row="1" x:Name="ButtonTask01" Content="Аутентификация" Margin="5 2 5 2"/>
+                    <Button Grid.Row="2" x:Name="ButtonTask02" Content="Показать бакеты" Margin="5 2 5 2"/>
+                    <Button Grid.Row="3" x:Name="ButtonTask03" Content="Создать бакет" Margin="5 2 5 2"/>
+                    <Button Grid.Row="4" x:Name="ButtonTask04" Content="Удалить все бакеты" Margin="5 2 5 2"/>
+                    <Grid Grid.Row="5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="3*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Button x:Name="ButtonTask05" Content="Выгрузить файл" Margin="5 2 2 2"/>
+                        <Button x:Name="ButtonTask051" Grid.Column="1"  Content="F" Margin="1 2 5 2"/>
+                    </Grid>
+                    <Button Grid.Row="6" x:Name="ButtonTask06" Content="Показать файлы" Margin="5 2 5 2"/>
+                </Grid>
+            </Border>
+            <Border Grid.Column="1" Background="#22474747">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="5"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="5"/>
+                        <RowDefinition Height="5"/>
+                    </Grid.RowDefinitions>
+                    <TextBox x:Name="TextBoxBottomInfo" Grid.Row="1" Text="" TextWrapping="Wrap" AcceptsReturn="True"
+                             Margin="20 0 5 5" Background="Transparent" BorderBrush="Transparent"
+                             VerticalScrollBarVisibility="Auto"/>
+                    <Grid Grid.Row="2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="5"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <TextBlock Text="BucketKey" Margin="5 0 0 0" />
+                        <TextBox Name="TextBoxBuketKey" Grid.Row="0" Grid.Column="1" Text="" Margin="0 0 0 0" 
+                                 Background="#44444444" BorderBrush="Transparent" VerticalScrollBarVisibility="Auto"/>
+                        <TextBlock Text="ObjectKey" Grid.Row="1" Margin="5 0 0 0" />
+                        <TextBox Name="TextBoxObjectKey" Grid.Row="1" Grid.Column="1" Text="" Margin="0 0 0 0" 
+                                 Background="#44444444" BorderBrush="Transparent" VerticalScrollBarVisibility="Auto"/>
+                        <TextBlock Text="UploadKey" Margin="5 0 0 0" Grid.Column="2" />
+                        <TextBox Name="TextBoxUploadKey" Grid.Row="0" Grid.Column="3" Text="" Margin="0 0 0 0" 
+                                 Background="#44444444" BorderBrush="Transparent" VerticalScrollBarVisibility="Auto"/>
+                        <TextBlock Text="SignedUrl" Margin="5 0 0 0" Grid.Column="2" Grid.Row="1" />
+                        <TextBox Name="TextBoxSignedUrl" Grid.Row="1" Grid.Column="3" Text="" Margin="0 0 0 0" 
+                                 Background="#44444444" BorderBrush="Transparent" VerticalScrollBarVisibility="Auto"/>
+                        <TextBlock Text="Path" Margin="5 0 0 0" Grid.Column="2" Grid.Row="2" />
+                        <TextBox Name="TextBoxPath" Grid.Row="2" Grid.Column="3" Text="" Margin="0 0 0 0" 
+                                 Background="#44444444" BorderBrush="Transparent" VerticalScrollBarVisibility="Auto"/>
+                    </Grid>
+                    
+                </Grid>
+            </Border> 
+        </Grid>
+        
+            
+        
+    </Grid>
+</Window>
