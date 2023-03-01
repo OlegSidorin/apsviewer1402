@@ -37,6 +37,14 @@ namespace Logger.Views
             TextBoxDebugInfo.Text = str;
             ButtonApply.Click += ButtonApply_Click;
             CurrentDebugWindow = this;
+
+            ContentRendered += (sender, args) =>
+            {
+                TextBoxDebugInfo.CaretIndex = TextBoxDebugInfo.Text.Length;
+                TextBoxDebugInfo.ScrollToEnd(); // not necessary for single line texts
+                TextBoxDebugInfo.Focus();
+            };
+
         }
         private void ButtonApply_Click(object sender, RoutedEventArgs e)
         {

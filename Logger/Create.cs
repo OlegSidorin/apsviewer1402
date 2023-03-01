@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
 
 namespace Logger
 {
@@ -20,6 +22,8 @@ namespace Logger
                 {
                     string s1 = CurrentWindow.TextBoxDebugInfo.Text + "\n" + str; //:↯\n
                     ((DebugWindowViewModel)CurrentWindow.DataContext).DebugInfo = s1;
+                    //CurrentWindow.TextBoxDebugInfo.Select(CurrentWindow.TextBoxDebugInfo.Text.Length, 0);
+                    CurrentWindow.TextBoxDebugInfo.CaretIndex = CurrentWindow.TextBoxDebugInfo.Text.Length;
                     CurrentWindow.Show();
                 }
                 else
