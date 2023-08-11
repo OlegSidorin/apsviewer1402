@@ -1,5 +1,4 @@
-﻿using Autodesk.Forge.Model;
-using MS.WindowsAPICodePack.Internal;
+﻿using MS.WindowsAPICodePack.Internal;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
